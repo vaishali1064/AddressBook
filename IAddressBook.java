@@ -9,6 +9,7 @@ public interface IAddressBook
 	//Retrive data 
 	void getData();
 	void delete(String firstName);
+	void addMultiplePerson();
 }
 
 		

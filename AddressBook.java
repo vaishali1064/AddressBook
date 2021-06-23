@@ -95,7 +95,25 @@ public class AddressBook implements IAddressBook
 		            	}
 		            }
 		      }
-	
+			 public void addMultiplePerson() 
+			 {
+	        	 
+	             System.out.println("Enter a person Name:");
+	             String firstName = detail.nextLine();
+	             for(int i = 0; i <  personList.size(); i++) 
+	             {
+	        	        Person person = personList.get(i);
+	        	        if(personList.get(i).getFirstName().equals(firstName)) 
+	        	        {
+	        	        	System.out.println("Duplicate");
+	        	        }	
+	        	        else
+	        	        {
+	        	        	add();
+	        	        }
+	        	  
+			}
+		}
 		
 		public static void main(String[] args) 
 		{
@@ -118,6 +136,8 @@ public class AddressBook implements IAddressBook
  	       System.out.println("Enter the Name of the person do you wants to delete");
            String firstName1 = detail.nextLine();
            addressBook.delete(firstName1);
+           
+           addressBook.addMultiplePerson();
 			
 		}
 
