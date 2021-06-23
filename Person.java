@@ -11,8 +11,22 @@ public class Person
 		public int zip;
 		public long phoneNo;
 		public String email;
+	
 		
-		
+			public Person(String firstName, String lastName, String address, String city, String state, int zip,
+				long phoneNo, String email) 
+			{
+						super();
+						this.firstName = firstName;
+						this.lastName = lastName;
+						this.address = address;
+						this.city = city;
+						this.state = state;
+						this.zip = zip;
+						this.phoneNo = phoneNo;
+						this.email = email;
+		     }
+			
 			//generate getter and setter
 		
 			public String getFirstName() {
