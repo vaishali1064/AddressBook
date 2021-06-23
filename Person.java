@@ -2,7 +2,7 @@ package addressBook;
 
 public class Person
 {	
-	//Declare Variable
+		//Declare Variable
 		public String firstName;
 		public String lastName;
 		public String address;
@@ -13,7 +13,7 @@ public class Person
 		public String email;
 		
 		
-		//generate getter and setter
+			//generate getter and setter
 		
 			public String getFirstName() {
 				return firstName;
@@ -65,3 +65,4 @@ public class Person
 			}
 
 }
+
