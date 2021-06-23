@@ -83,6 +83,18 @@ public class AddressBook implements IAddressBook
 	                System.out.println("Hi " + person.getFirstName() + " you have sucessfully updated");
 	             }
 			}
+			
+			 public void delete(String name) 
+			 {
+		            for (int i = 0; i < personList.size(); i++) 
+		            {
+		            	if(personList.get(i).getFirstName().equals(name)) 
+		            	{
+		            		Person person = personList.get(i);
+		            		personList.remove(person);
+		            	}
+		            }
+		      }
 	
 		
 		public static void main(String[] args) 
@@ -98,9 +110,14 @@ public class AddressBook implements IAddressBook
 			addressBook.getData();
 			
 			
-			System.out.println("\n Enter the firstName:");
+			System.out.println("\nEnter the firstName:");
             String firstName = detail.nextLine();
  	       	addressBook.edit(firstName);
+ 	       	
+ 	       //delete data
+ 	       System.out.println("Enter the Name of the person do you wants to delete");
+           String firstName1 = detail.nextLine();
+           addressBook.delete(firstName1);
 			
 		}
 

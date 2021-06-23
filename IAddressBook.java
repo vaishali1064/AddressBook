@@ -8,6 +8,7 @@ public interface IAddressBook
 	void edit(String firstName);
 	//Retrive data 
 	void getData();
+	void delete(String firstName);
 }
 
 		
